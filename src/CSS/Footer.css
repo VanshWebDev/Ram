@@ -1,0 +1,166 @@
+.footer-portion {
+    height: 2px;
+    background-color: rgb(54, 52, 52);
+}
+
+.lastSection {
+    /* border: 2px solid red; */
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin: 0px 11px;
+}
+
+.logoName {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 1px;
+    color: #808080;
+    justify-content: left;
+}
+
+.logoName img {
+    margin-right: 10px;
+    height: 25px;
+
+}
+
+.mailBtn {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.mailBtn button {
+    padding: 10px 20px;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid #808080;
+    background-color: transparent;
+    color: white;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.mailBtn button:active {
+    border: 2px solid #ffffff;
+}
+
+.mailBtn button i {
+    transition: 0.5s;
+}
+
+.mailBtn button i:hover {
+    background: transparent;
+    color: #feb406;
+}
+
+.mailBtn button:hover>i {
+    color: rgb(255, 208, 0);
+    transform: translate(5px);
+    /* font-size: 15px; */
+    background-color: transparent;
+}
+
+.availOn {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.availOn span {
+    color: #feb406;
+}
+
+.iconsss {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+}
+
+.copyright {
+    /* position: absolute; */
+    /* left: 10px; */
+    font-size: 16px;
+    color: #808080;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+@media (max-width:700px) {
+    .copyright {
+        font-size: 8px;
+    }
+}
+
+.iconsss i {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    background-color: #808080;
+    border-radius: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+    font-size: 22px;
+    margin-right: 10px;
+}
+.iconsss a:nth-child(3) i{
+    margin-right: 0px;
+}
+.fa-brands:hover,
+.fa-solid:hover {
+    background: #adadad;
+}
+
+.pattern{
+    /* border: 2px solid red; */
+    position: absolute;
+    left: -10px;
+    bottom: 0px;
+    height: 200px;
+
+}
+.pattern2{
+    position: absolute;
+    height: 200px;
+    right: -11px;
+    top: 0px;
+}
+@media (max-width: 450px) {
+    .pattern{
+        height: 180px;
+    }
+    .pattern2{
+        height: 180px;
+    }
+}
+@media (max-width: 400px) {
+    .pattern{
+        height: 150px;
+    }
+    .pattern2{
+        height: 150px;
+    }
+}
+
+
+
+
+
+

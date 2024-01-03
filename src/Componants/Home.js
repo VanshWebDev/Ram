@@ -3,8 +3,8 @@ import React from 'react'
 
 function Home() {
     return (
-        <>
-            <section id="home" style={{ height: '100vh' }}>
+        <section id='home'>
+            <section id="home" style={{ height: "80vh"}}>
                 <div className="main">
                 </div>
 
@@ -35,7 +35,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     )
 }
 

@@ -1,3 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&family=Saira:wght@500&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Montserrat:wght@300;400&family=Nunito&family=Raleway&family=Saira:wght@500&family=Young+Serif&display=swap');
+
+
+* {
+    scroll-behavior: smooth;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: white;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+::selection {
+    background: #808080;
+    color: black;
+}
+
+::-webkit-scrollbar {
+    /* width: 400px; */
+    background: #000000;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+    /* width: 100px; */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #808080;
+    border-radius: 10px;
+    height: 20px;
+    width: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #feb406;
+}
+
+:root {
+    --dark-navy: #000;
+}
+
+html,
+body {
+    background-color: var(--dark-navy);
+    font-family: Impact;
+    font-family: 'Josefin Sans', sans-serif;
+    /* margin: 0px 40px; */
+    /* height: 100vh; */
+    /* border: 2px solid red; */
+}
+
 .main {
     /* border: 2px dashed yellow; */
     margin-top: 80px;
@@ -283,21 +340,87 @@
     }
 }
 
-.scrollDown {
+/* -------scroll-mouse------------*/
+/* -------scroll-mouse------------*/
+/* -------scroll-mouse------------*/
+/* -------scroll-mouse------------*/
+/* -------scroll-mouse------------*/
+.scrollMouse {
+    /* border: 2px solid green; */
+    bottom: 2px;
     position: absolute;
-    border: 2px solid green;
+    width: 100%;
+}
+
+@media (max-height: 690px) {
+    .scrollMouse {
+        bottom: -20px;
+    }
+}
+
+@media (max-height: 640px) {
+    .scrollMouse {
+        bottom: -50px;
+    }
+}
+
+@media (max-height: 620px) {
+    .scrollMouse {
+        bottom: -180px;
+    }
+}
+
+
+.containerrr {
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
     display: flex;
+    align-items: center;
     justify-content: center;
-    bottom: 0px;
-    right: 50%;
-    transform: translate(50%);
 }
 
-.scrollDown div {
-    border: 2px solid orange;
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.mouse {
+    width: 30px;
     height: 50px;
+    border: 3px solid #727171;
+    border-radius: 60px;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #5c5e5f;
+        border-radius: 50%;
+        opacity: 1;
+        animation: wheel 2s infinite;
+        -webkit-animation: wheel 2s infinite;
+    }
 }
 
-.scrollDown div video {
-    height: 100px;
+@keyframes wheel {
+    to {
+        opacity: 0;
+        top: 60px;
+    }
+}
+
+@-webkit-keyframes wheel {
+    to {
+        opacity: 0;
+        top: 60px;
+    }
 }
