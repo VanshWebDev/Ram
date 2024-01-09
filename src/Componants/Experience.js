@@ -2,7 +2,7 @@ import React from 'react'
 import experience from './Media/experience.png';
 function Experience() {
     return (
-        <section id="experience" style={{height: "80vh;"}}>
+        <section id="experience">
         <div className="experience-section"></div>
 
         <div className="experience" data-aos="fade-up">Exper<span>i</span>ence</div>
