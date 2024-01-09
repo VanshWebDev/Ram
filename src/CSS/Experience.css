@@ -242,3 +242,114 @@
     }
 
 }
+/* ---faq---- */
+/* ---faq---- */
+/* ---faq---- */
+/* ---faq---- */
+
+.faq {
+    padding: 10px;
+    text-align: center;
+    margin: 250px 20px 0px 20px;
+    /* border: 2px solid red; */
+}
+@media (max-height: 700px) {
+    .faq{
+        margin-top: 100px;
+    }
+}
+@media (max-height: 650px) {
+    .faq{
+        margin-top: 150px;
+    }
+}
+@media (max-height: 580px) {
+    .faq{
+        margin-top: 180px;
+    }
+}
+.faq h2 {
+    font-size: 30px;
+}
+
+@media (max-width:550px) {
+    .faq h2 {
+        font-size: 25px;
+    }
+}
+
+.accordion {
+    margin: 20px auto 60px auto;
+    width: 100%;
+    max-width: 1089px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* border: 2px solid rgb(30, 255, 0); */
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+    /* border: 2px solid rgb(0, 17, 255); */
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 31px 24px;
+    font-size: 18px;
+    font-weight: 500px;
+    background: #302f2fab;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.2s;
+    padding-right: 50px;
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    color: #ffffff;
+    box-shadow: 0px -5px 20px 0px rgba(0, 0, 0, 0.507);
+}
+
+.accordion li label:hover {
+    /* background: linear-gradient(180deg, #3eb867 0%, #7ea029 100%); */
+    background: rgba(63, 62, 62, 0.63);
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: all 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background: #302f2fab;
+    text-align: left;
+    padding: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.accordion input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+@media (max-width: 550px) {
+    .accordion li label {
+        font-size: 16px;
+    }
+}
+

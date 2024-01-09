@@ -1,5 +1,11 @@
 import React, { Component } from 'react'
 import certificate from './Media/certificate.gif'
+import figma from './Media/figma.png';
+import visualStudioCode from './Media/visualStudioCode.png'
+import lunacy from './Media/lunacy.png'
+import canva from './Media/canva.png'
+import bootstrap from './Media/bootstrap.png'
+
 export class Skill extends Component {
     render() {
         return (
@@ -63,6 +69,49 @@ export class Skill extends Component {
                     </div>
 
                 </div>
+
+
+                {/* tools i user in my work */}
+                {/* tools i user in my work */}
+                {/* tools i user in my work */}
+                {/* tools i user in my work */}
+
+                {/* // <!------------------- tools-section------------- --> */}
+
+                <div className="tools-container" data-aos="zoom-in">
+                    <div className="tools1">TOOLS I USE IN MY WORK</div>
+                    <div className="tools2">
+                        <a href="https://www.canva.com/" rel="noreferrer" target="_blank">
+                            <div><i className="fa-solid fa-c"></i>Canva</div>
+                        </a>
+
+                        <a href="https://www.figma.com/" rel="noreferrer" target="_blank">
+                            <div><i className="fa-brands fa-figma"></i>Figma</div>
+                        </a>
+
+                        <a href="https://icons8.com/lunacy" rel="noreferrer" target="_blank">
+                            <div><i className="fa-solid fa-github"></i>Github</div>
+                        </a>
+                    </div>
+                    <div className="tools3">
+                        <a href="https://getbootstrap.com/" rel="noreferrer" target="_blank">
+                            <div><i className="fa-brands fa-bootstrap"></i>Bootstrap</div>
+                        </a>
+                        <a href="https://code.visualstudio.com/" rel="noreferrer" target="_blank">
+                            <div><i className="fa-solid fa-code"></i>Visual studio code</div>
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+                {/* // <!-- slider-section --> */}
+
+
+
+                
+
             </section>
         )
     }
