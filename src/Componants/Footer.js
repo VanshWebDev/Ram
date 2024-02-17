@@ -37,7 +37,7 @@ export default function Footer() {
             {/* <!-- -------------------------------------- --> */}
             <div className="mailBtn">
                 <a href="mailto: vanshvanshkumar39@gmail.com">
-                    <button className="hvlook2">Mail us <pre style={{display: 'inline'}}>     </pre>
+                    <button className="hvlook2">Mail us &nbsp;
                         <i className="fa-solid fa-envelope"></i>
                     </button>
                 </a>

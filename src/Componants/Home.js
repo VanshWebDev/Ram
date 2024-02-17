@@ -12,7 +12,7 @@ function Home() {
             <div className="lamp-container"></div>
             <p className="first-text">Hii,</p>
             <p className="second-text">
-              I'm a <span>front-end</span> devloper
+              I'm a <span>full-stack</span> devloper
             </p>
             <p className="third-text">Vansh kumar</p>
 
@@ -36,17 +36,24 @@ function Home() {
           </div>
         </div>
       </div>
-
+      {/* ---------- bottom bavbar ------- */}
       <div className="navbarContainer">
         <div className="bottomNavbar">
           <div className="firstIcn">
             <a href="#home">Home</a>
             <a href="#skill">Skill</a>
           </div>
-          <div className="secondIcn">
-            <div className="se"></div>
-            <img src={logo} alt="logo" className="logo" />
+
+          <div className="mainCon">
+            <ul className="mainconUl">
+              <li>Send mail</li>
+            </ul>
+            <div className="secondIcn">
+              <div className="se"></div>
+              <img src={logo} alt="logo" className="logo" />
+            </div>
           </div>
+
           <div className="thirdIcn">
             <a href="#project">Project</a>
             <a href="#experience">Experience</a>

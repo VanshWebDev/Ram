@@ -4,8 +4,8 @@ import './CSS/Skill.css';
 import './CSS/Project.css';
 import './CSS/Experience.css';
 import './CSS/Footer.css';
+import './CSS/Testimonial.css'
 // ----------css------------
-import Navbar from './Componants/Navbar';
 import Home from './Componants/Home';
 import Skill from './Componants/Skill';
 import Project from './Componants/Project';
@@ -15,7 +15,6 @@ import Footer from './Componants/Footer';
 function App() {
   return (
     <>
-        <Navbar />
         <Home />
         <Skill />
         <Project />

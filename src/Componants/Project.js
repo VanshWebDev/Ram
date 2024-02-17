@@ -16,7 +16,7 @@ export default function Project() {
                             <div className="container image1">
                                 {/* <!-- <p className="p">Normal</p> --> */}
                             </div>
-                            <button className="hvlook">Have a look &nbsp<i
+                            <button className="hvlook">Have a look &nbsp;<i
                                 className="fa-solid fa-arrow-up-right-from-square"></i></button>
 
                         </div>
@@ -29,7 +29,7 @@ export default function Project() {
                             </div>
 
 
-                            <button className="hvlook">Have a look &nbsp<i
+                            <button className="hvlook"> Have a look &nbsp;<i
                                 className="fa-solid fa-arrow-up-right-from-square"></i></button>
 
                         </div>
