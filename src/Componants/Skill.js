@@ -153,7 +153,7 @@ export class Skill extends Component {
                     <SwiperSlide>
                       <div className="swiper-slide">
                         <img src={figma} alt="Figma" />
-                        <h3>
+                        <h3 className="description">
                           Figma is a tool used to design like apps and websites.
                           It works in your browser, so you can just open a new
                           tab and start designing.
@@ -165,7 +165,7 @@ export class Skill extends Component {
                     <SwiperSlide>
                       <div className="swiper-slide">
                         <img src={visualStudioCode} alt="Visual Studio Code" />
-                        <h3>
+                        <h3 className="description">
                           Visual Studio Code is a popular and versatile code
                           editor that help me to write, debug, and run code in
                           different type of languages and platforms.
@@ -177,7 +177,7 @@ export class Skill extends Component {
                     <SwiperSlide>
                       <div className="swiper-slide">
                         <img src={lunacy} alt="Lunacy" />
-                        <h3>
+                        <h3 className="description">
                           This is a software that allows users to create and
                           edit web pages, graphics, and prototypes with various
                           features and
@@ -189,7 +189,7 @@ export class Skill extends Component {
                     <SwiperSlide>
                       <div className="swiper-slide">
                         <img src={canva} alt="Canva" />
-                        <h3>
+                        <h3 className="description">
                           Canva is a popular online graphic designer it allows
                           us to create stunning visual content easily. Whether
                           you design web page social media posts, videos or
@@ -202,7 +202,7 @@ export class Skill extends Component {
                     <SwiperSlide>
                       <div className="swiper-slide">
                         <img src={bootstrap} alt="Bootstrap" />
-                        <h3>
+                        <h3 className="description">
                           Bootstrap helps in web development by providing a
                           framework that simplifies the process of creating
                           responsive, mobile-friendly websites with HTML, CSS,
@@ -215,7 +215,7 @@ export class Skill extends Component {
                     <SwiperSlide>
                       <div className="swiper-slide">
                         <img src={github} alt="Github" />
-                        <h3>
+                        <h3 className="description">
                         GitHub is a platform for hosting and collaborating on code using Git. It provides version control, issue tracking, and project management tools for software development teams.{" "}
                         </h3>
                         <h5>GITHUB</h5>

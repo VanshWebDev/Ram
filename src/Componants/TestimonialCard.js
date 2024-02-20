@@ -43,7 +43,7 @@ const TestimonialCard = (props) => {
             </div>
             {/* -------------------------------- */}
             <div className="row2">
-              <p>Your website design is truly remarkable. It exhibits a perfect blend of creativity and functionality, leaving a lasting impression on users. Your talent shines brightly through your work, showcasing your exceptional skills and dedication to excellence.</p>
+              <p>Your website design is truly remarkable. It exhibits a perfect blend of creativity and functionality, leaving a lasting impression on users.</p>
             </div>
             {/* -------------------------------- */}
           </div>

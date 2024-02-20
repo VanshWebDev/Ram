@@ -7,9 +7,9 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 0.5rem;
-	width: 90%;
-	padding: 2rem;
+	gap: 1rem;
+	/* width: 90%; */
+	/* padding: 2rem; */
 }
 
 .cards:hover .card {
@@ -17,13 +17,10 @@
 }
 
 .card {
-	width: 20rem;
-	height: 15rem;
+	width: 250px;
+	height: 180px;
 	background: radial-gradient(150rem circle at 0 0, rgba(0, 255, 241, 0), transparent 0%);
 	border-radius: 0.5rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	position: relative;
 	transition: all 0.15s;
 }
@@ -67,7 +64,7 @@ display: flex;
 align-items: center;
 }
 .row1 img{
-  height: 40px;
+  height: 35px;
 }
 .row1-1 p{
   margin-left: 20px;
@@ -79,10 +76,7 @@ align-items: center;
   margin-right: 5px;
   color: orange;
 }
-.row2{
-  /* border: 2px solid red; */
-  margin-top: 10px;
-}
+
 .row2 p{
   font-size: 14px;
   font-family: "Nunito", sans-serif;
@@ -160,3 +154,56 @@ align-items: center;
 /* ---------------- */
 /* ---------------- */
 
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+
+  100% {
+      transform: translateX(calc(-100px * 10))
+  }
+}
+
+.slider {
+  opacity: 1;
+  animation: logoAnim 0.2s forwards 1.5s;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-track {
+  /* margin-top: 60px; */
+  animation: scroll 80s linear infinite;
+  display: flex;
+  width: calc(100px * 30);
+  gap: 10px;
+}
+
+.slide-track:hover {
+  animation-play-state: running;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-track2 {
+  /* margin-top: 60px; */
+  animation: scroll2 80s linear infinite;
+  display: flex;
+  width: calc(100px * 30);
+  gap: 10px;
+}
+@keyframes scroll2 {
+  0% {
+      
+      transform: translateX(calc(-100px * 10))
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -656,5 +656,8 @@
     #main {
         width: 90%;
     }
+    .swiper-slide h3{
+        font-size: 10px;
+    }
 }
 

@@ -40,8 +40,8 @@ function Home() {
       <div className="navbarContainer">
         <div className="bottomNavbar">
           <div className="firstIcn">
-            <a href="#home">Home</a>
-            <a href="#skill">Skill</a>
+            <a href="#home">Skill</a>
+            <a href="#skill" style={{marginRight: '-15px'}}>Project</a>
           </div>
 
           <div className="mainCon">
@@ -55,8 +55,8 @@ function Home() {
           </div>
 
           <div className="thirdIcn">
-            <a href="#project">Project</a>
-            <a href="#experience">Experience</a>
+            <a href="#project"  style={{marginLeft: '-15px'}}>Experience</a>
+            <a href="#experience">Contact</a>
           </div>
         </div>
       </div>
