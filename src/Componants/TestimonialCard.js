@@ -1,7 +1,13 @@
 import React, { useEffect } from "react";
 import shiva from "./Media/Shiva.png";
+import "../CSS/Testimonial.css";
 
 const TestimonialCard = (props) => {
+  let rating = props.data.rating;
+  let ratingArr = [];
+  for (let i = 0; i < rating; i++) {
+    ratingArr.push(<i className="fa fa-star"></i>);
+  }
   useEffect(() => {
     const wrapper = document.querySelector(".cards");
 
@@ -35,22 +41,21 @@ const TestimonialCard = (props) => {
           <div className="row1">
             <div className="row1-1">
               <img src={shiva} alt="" />
-              <p>Shiva</p>
+              <p>{props.data.name}</p>
             </div>
-            <div className="row1-2">
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-            </div>
+            <div className="row1-2">{ratingArr}</div>
           </div>
           <div className="row2">
-            <p>force y value to wrap when it reaches -100</p>
+            <p>
+              {props.data.description.slice(0, 80)}{" "}
+              <span className="animate-pulse opacity-1">
+                <b>...</b>
+              </span>
+            </p>
           </div>
         </div>
       </div>
-      </>
+    </>
   );
 };
 

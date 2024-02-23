@@ -599,7 +599,8 @@
 }
 
 .swiper-slide img {
-    /* display: block; */
+    display: inline;
+    /* border: 2px solid red; */
     width: 70px;
     height: 70px;
     object-fit: cover;
