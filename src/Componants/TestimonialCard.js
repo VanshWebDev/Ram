@@ -3,57 +3,54 @@ import shiva from "./Media/Shiva.png";
 
 const TestimonialCard = (props) => {
   useEffect(() => {
-    const cards = document.querySelectorAll(".card");
     const wrapper = document.querySelector(".cards");
 
-    wrapper.addEventListener("mousemove", function (event) {
-      cards.forEach((card) => {
-        const rect = card.getBoundingClientRect();
-        const x = event.clientX - rect.left;
-        const y = event.clientY - rect.top;
+    // Check if the wrapper element exists before adding event listener
+    if (wrapper) {
+      const cards = document.querySelectorAll(".card");
 
-        card.style.setProperty("--xPos", `${x}px`);
-        card.style.setProperty("--yPos", `${y}px`);
-      });
-    });
+      const handleMouseMove = (event) => {
+        cards.forEach((card) => {
+          const rect = card.getBoundingClientRect();
+          const x = event.clientX - rect.left;
+          const y = event.clientY - rect.top;
 
-    return () => {
-      wrapper.removeEventListener("mousemove", () => {});
-    };
+          card.style.setProperty("--xPos", `${x}px`);
+          card.style.setProperty("--yPos", `${y}px`);
+        });
+      };
+
+      wrapper.addEventListener("mousemove", handleMouseMove);
+
+      return () => {
+        wrapper.removeEventListener("mousemove", handleMouseMove);
+      };
+    }
   }, []); // Add an empty dependency array to ensure this effect runs only once
 
   return (
     <>
-      
-        <div className="card">
-          <div className="card-content">
-            {/* -------------------------------- */}
-            <div className="row1">
-              <div className="row1-1">
-                <img src={shiva} alt="" />
-                <p>Shiva</p>
-              </div>
-              <div className="row1-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
+      <div className="card">
+        <div className="card-content">
+          <div className="row1">
+            <div className="row1-1">
+              <img src={shiva} alt="" />
+              <p>Shiva</p>
             </div>
-            {/* -------------------------------- */}
-            <div className="row2">
-              <p>Your website design is truly remarkable. It exhibits a perfect blend of creativity and functionality, leaving a lasting impression on users.</p>
+            <div className="row1-2">
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
             </div>
-            {/* -------------------------------- */}
+          </div>
+          <div className="row2">
+            <p>force y value to wrap when it reaches -100</p>
           </div>
         </div>
-   
-
-      {/* <button class="glow-on-hover" type="button">
-        HOVER ME, THEN CLICK ME!
-      </button> */}
-    </>
+      </div>
+      </>
   );
 };
 
