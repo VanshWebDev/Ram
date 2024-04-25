@@ -27,7 +27,7 @@ function Experience() {
         </div>
       </div>
       <div>
-        <Testimonials />
+        {/* <Testimonials /> */}
       </div>
 
       {/* faq */}

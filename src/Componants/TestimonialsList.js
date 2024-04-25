@@ -35,7 +35,7 @@ const Testimonials = () => {
           })}
         </div>
       </div>
-      {/* <button class="glow-on-hover" type="button">HOVER ME, THEN CLICK ME!</button> */}
+      {/* <button className="glow-on-hover" type="button">HOVER ME, THEN CLICK ME!</button> */}
     </>
   );
 };

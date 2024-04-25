@@ -11,7 +11,7 @@ export default function Project() {
                     <p>Pro<span>j</span>ects</p>
                 </div>
                 <div className="main2">
-                    <a href="https://vrweather.netlify.app/" rel="noreferrer" target="_blank">
+                    <a href="https://vkweather.netlify.app/" rel="noreferrer" target="_blank">
                         <div className="wrap section1" data-aos="fade-down">
                             <div className="container image1">
                                 {/* <!-- <p className="p">Normal</p> --> */}

@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import resume from "./Media/certificate.pdf";
 export class Skill extends Component {
   render() {
     return (
@@ -52,7 +53,7 @@ export class Skill extends Component {
             </div>
 
             <div className="container3">
-              <div className="contaienr4">java</div>
+              <div className="contaienr4">React Js</div>
               <div className="container5">
                 <div id="compare4" className="compare"></div>
               </div>
@@ -68,9 +69,8 @@ export class Skill extends Component {
               devlopent skill with 100% accuracy.
             </div>
             <a
-              href="certificate.html"
+              href={resume}
               target="_blank"
-              style={{ textDecoration: "none" }}
             >
               {" "}
               <button className="skill-certificate">
@@ -109,7 +109,7 @@ export class Skill extends Component {
                 target="_blank"
               >
                 <div>
-                  <i class="fa-brands fa-github"></i>Github
+                  <i className="fa-brands fa-github"></i>Github
                 </div>
               </a>
             </div>

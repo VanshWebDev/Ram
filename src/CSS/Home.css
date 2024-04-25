@@ -52,10 +52,15 @@ body {
   /* height: 100vh; */
   /* border: 2px solid red; */
 }
+#home{
+  /* border: 2px solid rgb(174, 255, 0); */
+  display: flex;
+  justify-content: center;
 
+}
 .main {
   /* border: 2px dashed yellow; */
-  margin-top: 80px;
+  /* margin-top: 80px; */
   display: flex;
   justify-content: center;
 }
@@ -192,6 +197,7 @@ body {
 .image-container img {
   height: 320px;
   animation: textAnim 1.5s 1s;
+border-bottom-right-radius: 20px;
   /* border: 2px solid red; */
 }
 

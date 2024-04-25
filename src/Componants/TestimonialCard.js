@@ -6,7 +6,7 @@ const TestimonialCard = (props) => {
   let rating = props.data.rating;
   let ratingArr = [];
   for (let i = 0; i < rating; i++) {
-    ratingArr.push(<i className="fa fa-star"></i>);
+    ratingArr.push(<i className="fa fa-star" key={i}></i>);
   }
   useEffect(() => {
     const wrapper = document.querySelector(".cards");

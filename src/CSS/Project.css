@@ -87,6 +87,7 @@
     transition: 0.5s;
     cursor: pointer;
     margin-top: 10px;
+    font-size: 12px;
 }
 
 .hvlook i {
